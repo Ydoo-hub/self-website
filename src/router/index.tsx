@@ -5,6 +5,7 @@ import {
     Routes
   } from 'react-router-dom'
 import HomePage from '../container/home';
+import './style.css'
 
 const App = () => {
     return <Router>
