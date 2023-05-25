@@ -5,6 +5,9 @@ import { observer } from "mobx-react-lite";
 
 import HeadNav from '../../sections/head-nav'
 import VideoBox from '../../sections/video-box'
+import CertificateBox from '../../sections/certificate-box'
+import ArticleBox from "../../sections/article-box";
+import BottomNav from "../../sections/bottom-nav";
 
 const HomePage = () => {
 
@@ -16,10 +19,13 @@ const HomePage = () => {
     }
 
 
-    return<>
+    return<div style={{minWidth: '1440px'}}>
         <HeadNav />
         <VideoBox />
-    </>
+        <CertificateBox />
+        <ArticleBox />
+        <BottomNav/>
+    </div>
 }
 
 export default observer(HomePage)

@@ -1,5 +1,5 @@
 .video-container {
-    width: 100vw;
+    /* width: 100vw; */
     margin-top: -80px;
     z-index: -9;
     position: relative;
@@ -49,4 +49,8 @@
     /* height: 500px; */
     font-size: 32px;
     line-height: 60px;
+}
+video {
+    width: 100%;
+    height: auto;
 }

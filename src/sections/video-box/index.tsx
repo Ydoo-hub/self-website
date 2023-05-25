@@ -55,7 +55,7 @@ const VideoBox = () => {
         </div>
         
         <div className="video-mask"></div>
-        <video width={videoWidth} height={videoHeight} src={VIDEO_URL} autoPlay muted loop controls/>
+        <video className="video-box" height={videoHeight} src={VIDEO_URL} autoPlay muted loop/>
     </div>
 }
 
