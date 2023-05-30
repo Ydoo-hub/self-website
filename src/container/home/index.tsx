@@ -20,7 +20,7 @@ const HomePage = () => {
 
 
     return<div style={{minWidth: '1440px'}}>
-        <HeadNav />
+        <HeadNav chooseIndex={0}/>
         <VideoBox />
         <CertificateBox />
         <ArticleBox />

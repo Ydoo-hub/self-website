@@ -1,6 +1,6 @@
 .nav-container {
     display: flex;
-    width: 100vw;
+    min-width: 1440px;
     height: 80px;
     /* background-color: cornflowerblue; */
     background-color: rgba(0, 0, 0, 0);

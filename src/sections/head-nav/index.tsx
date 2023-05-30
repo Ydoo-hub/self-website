@@ -5,13 +5,21 @@ import { observer } from "mobx-react";
 import LOGO from '../../assets/image/441684982044_.pic.jpg'
 // import LOGO from '../../assets/image/461684982492_.pic.jpg'
 
-const HeadNav = () => {
+interface IProps {
+    chooseIndex: number
+}
+
+const TAB_LIST = ['首页', '更多证书', '所有文章', '关于我们']
+
+const HeadNav = (props: IProps) => {
+    const {chooseIndex} = props
     return <div className="nav-container">
         <img className="logo" src={LOGO}/>
-        <div className="page-title choose">首页</div>
-        <div className="page-title">更多证书</div>
-        <div className="page-title">所有文章</div>
-        <div className="page-title">关于我们</div>
+        {
+            TAB_LIST.map((i, index) => {
+                return <div className={`${chooseIndex === index ? 'page-title choose' : 'page-title'}`}>{i}</div>
+            })
+        }
     </div>
 }
 

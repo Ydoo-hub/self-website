@@ -3,7 +3,13 @@ body {
     height: auto;
     /* padding: 0; */
     /* overflow-y: hidden; */
+    background: linear-gradient(to bottom, #345fff, #4cb8c4);
 }
+
+
+/* 隐藏滚动条，但保留滚动行为 */
 body::-webkit-scrollbar {
-    width: 0px;
+    width: 0em;
+    height: 0em;
 }
+
