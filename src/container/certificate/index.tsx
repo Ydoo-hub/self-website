@@ -4,10 +4,13 @@ import HeadNav from '../../sections/head-nav'
 // @ts-ignore
 import CERTIFICATE_PNG from '../../assets/image/certificate.jpg'
 import BottomNav from "../../sections/bottom-nav";
+import { useNavigate } from "react-router-dom";
 
 const Certificate = () => {
+    const navigate = useNavigate();
+
     return <div className='certificate-container'>
-        <HeadNav chooseIndex={2}/>
+        <HeadNav chooseIndex={1}/>
         <div className='cer-container'>
             <div className='list-box'>
                 <div className='certificate-item'>
@@ -18,7 +21,7 @@ const Certificate = () => {
                             <div>xxxxx证书是什么什么，具有xxx等级</div>
                             <div>发证机构：xxxxxxxx</div>
                         </div>
-                        <div className='certificate-check'>
+                        <div className='certificate-check' onClick={() => navigate('/detail')}>
                             {'前往查看详情>>>'}
                         </div>
                     </div>

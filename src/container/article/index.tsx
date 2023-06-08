@@ -6,10 +6,15 @@ import CERTIFICATE_PNG from '../../assets/image/certificate.jpg'
 // @ts-ignore
 import EYE_PNG from '../../assets/image/eye.png'
 import BottomNav from "../../sections/bottom-nav";
+import { useNavigate } from "react-router-dom";
 
 const Article = () => {
+    const navigate = useNavigate();
+
+
+
     return <div className='article-container'>
-        <HeadNav chooseIndex={1}/>
+        <HeadNav chooseIndex={2}/>
         <div className='cer-container'>
             <div className='list-box'>
                 <div className='article-item'>
@@ -24,7 +29,7 @@ const Article = () => {
                         </div>
                         <div className='article-tip'>
                             <div className='article-view'><img className='view-icon' src={EYE_PNG}/> 233 浏览</div>
-                            <div className='article-check'>{'前往查看详情>>>'}</div>
+                            <div className='article-check' onClick={() => navigate('/detail')}>{'前往查看详情>>>'}</div>
                         </div>
                     </div>
                 </div>
