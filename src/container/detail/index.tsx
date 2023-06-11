@@ -7,7 +7,7 @@ import CERTIFICATE_PNG from '../../assets/image/certificate.jpg'
 
 const Detail = () => {
     return <div className='detail-container'>
-        <HeadNav chooseIndex={1}/>
+        <HeadNav chooseIndex={-1}/>
         <div className='de-container'>
             <div className='detail-box'>
                 <div className='title'>

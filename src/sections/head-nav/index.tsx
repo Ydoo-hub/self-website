@@ -21,7 +21,7 @@ const HeadNav = (props: IProps) => {
     const choosePage = (idx: number) => {
         navigate(TAB_ROUTER_LIST[idx], {replace: true})
     }
-    return <div className="nav-container">
+    return <div className="nav-container-self">
         <img className="logo" src={LOGO}/>
         {
             TAB_LIST.map((i, index) => {

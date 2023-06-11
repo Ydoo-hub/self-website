@@ -1,9 +1,9 @@
-.nav-container {
+.nav-container-self {
     display: flex;
     min-width: 1440px;
     height: 80px;
     /* background-color: cornflowerblue; */
-    background-color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
     box-sizing: border-box;
     padding: 0 50px;
     cursor: pointer;
