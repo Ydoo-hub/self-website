@@ -41,16 +41,15 @@ const VideoBox = () => {
         {/* <video width="320" height="240" src='https://assets.icoderoad.com/course/video-background/video.mp4'/> */}
         <div className="text-box">
             <div className="letf-text">
-                <div className="font-size-60">  考证就找</div>
-                <div>「 办的了 」</div>
+                <div className="font-size-60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;考证就找</div>
+                <div style={{color: '#D5575f'}}>「 <span style={{color: '#fff', fontWeight: 800}}>办得了</span> 」</div>
 
             </div>
             <div className="right-text">
-                <div>· 湿答答那是你的离开那</div>
-                <div>· 湿答答那是你的离开那</div>
-                <div>· 湿答答那是你的离开那</div>
-                <div>· 湿答答那是你的离开那</div>
-                <div>· 湿答答那是你的离开那</div>
+                <div><span style={{color: '#fff'}}>•</span> <span style={{color: '#D5575f'}}>心理咨询师</span></div>
+                <div><span style={{color: '#D5575f'}}>•</span> 中医康复理疗师</div>
+                <div><span style={{color: '#fff'}}>•</span> <span style={{color: '#D5575f'}}>中医预防保健调理技术</span></div>
+                <div><span style={{color: '#D5575f'}}>•</span> 慢病管理与服务技能提升</div>
             </div>
         </div>
         

@@ -15,8 +15,8 @@
 .line {
     width: 30px;
     height: 2px;
-    border: 3px black solid;
-    background-color: black;
+    border: 1px #D5575f solid;
+    background-color: #D5575f;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -40,14 +40,14 @@
 .first-type {
     width: 800px;
     height: 400px;
-    border: 1px red solid;
+    /* border: 1px red solid; */
     margin-bottom: 20px;
 }
 
 .second-type {
     width: 400px;
     height: 400px;
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
     margin-bottom: 20px;
 
 }
@@ -55,6 +55,46 @@
 .third-type {
     width: 600px;
     height: 400px;
-    border: 1px black solid;
+    /* border: 1px black solid; */
     margin-bottom: 20px;
 }
+
+.img-box-child {
+    overflow: hidden;  /* 设置为隐藏，以便在图片放大时不溢出容器 */
+    position: relative;  /* 为了让图片的缩放位置调整为相对于容器 */
+  }
+  
+  .box img {
+    position: absolute;  /* 让图片的定位为绝对定位，以便调整图片在容器内的位置*/
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;  /* 添加过渡效果 */
+  
+  }
+  
+  .box:hover img {
+    transform: scale(1.2);  /* 鼠标移入时，让图片的大小放大为原来的1.2倍 */
+  }
+
+  .text-box-child {
+    font-size: 24px;
+    line-height: 42px;
+    text-indent: 2em;
+  }
+
+  .text-box-main {
+    box-sizing: border-box;
+    background-color: rgba(213,87,95, 0.1);
+    padding: 20px;
+    position: relative;
+  }
+
+  .concat-me-tip {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 18px;
+    color: #D5575f;
+    text-decoration: underline;
+    cursor: pointer;
+  }

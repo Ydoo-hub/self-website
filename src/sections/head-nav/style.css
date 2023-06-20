@@ -1,7 +1,8 @@
 .nav-container-self {
     display: flex;
-    min-width: 1440px;
-    height: 80px;
+    /* min-width: 1440px; */
+    /* width: 100vw; */
+    flex: 1;
     /* background-color: cornflowerblue; */
     background: rgba(0, 0, 0, 0);
     box-sizing: border-box;
@@ -25,7 +26,7 @@
 
 
 .logo {
-    width: 160px;
+    width: 210px;
     height: 60px;
     margin-top: 10px;
     /* line-height: 60px; */

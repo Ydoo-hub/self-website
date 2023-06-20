@@ -22,7 +22,8 @@
 }
 
 .font-size-60 {
-    font-size: 60px;
+    font-size: 48px;
+
 }
 
 .text-box {
@@ -33,14 +34,14 @@
     color: white;
     z-index: 1;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
     width: 100%;
 }
 
 .letf-text {
     /* width: 300px; */
     /* height: 400px; */
-    /* border: 1px white solid; */
     font-size: 72px;
 }
 
@@ -49,6 +50,8 @@
     /* height: 500px; */
     font-size: 32px;
     line-height: 60px;
+    /* padding-right: 80px; */
+    margin-top: -40px;
 }
 video {
     width: 100%;
