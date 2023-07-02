@@ -28,9 +28,9 @@ const HeadNav = (props: IProps) => {
 
     const choosePage = (idx: number) => {
 
-        if (idx === 1 || idx === 2) {
+        if (idx === 2) {
 
-            const currMessage = idx === 1 ? '更多证书真正快马加鞭赶来，敬请期待...' : '更多文章真正快马加鞭赶来，敬请期待...'
+            const currMessage = '更多文章真正快马加鞭赶来，敬请期待...'
             setMessage(currMessage)
             setShow(true)
             return;
@@ -43,19 +43,23 @@ const HeadNav = (props: IProps) => {
     }
     return <div style={{display: "flex", width: '100vw', height: '80px'}}>
         <div className="nav-container-self">
+            <div style={{display: 'flex'}}>
+                <img className="logo" src={LOGO}/>
+                {
+                    TAB_LIST.map((i, index) => {
+                        return <div onClick={() => choosePage(index)} className={`${chooseIndex === index ? 'page-title choose' : 'page-title'}`} style={{color: chooseIndex !== 0 ? 'black' : '#fff', cursor: 'pointer'}}>{i}</div>
+                    })
+                }
+            </div>
 
-            <img className="logo" src={LOGO}/>
-            {
-                TAB_LIST.map((i, index) => {
-                    return <div onClick={() => choosePage(index)} className={`${chooseIndex === index ? 'page-title choose' : 'page-title'}`} style={{color: chooseIndex !== 0 ? 'black' : '#fff'}}>{i}</div>
-                })
-            }
+            <div style={{display: 'flex', position: 'absolute', right: 0}}>
+                <div style={{margin: '30px 10px 0px 0px'}}>
+                    <img src={PHONE} width='32px' height='32px'/>
+                </div>
+                <span style={{color: '#D5575f', fontSize: 24, lineHeight: '36px', marginTop: '30px', marginRight: '60px'}}>153 2340 5004</span>
+            </div>
         </div>
-        <div style={{margin: '30px 10px 0px 0px'}}>
-            <img src={PHONE} width='32px' height='32px'/>
-        </div>
-        <span style={{color: '#D5575f', fontSize: 24, lineHeight: '36px', marginTop: '30px', marginRight: '60px'}}>153 2340 5004</span>
-
+        
         { show && <Toast message={message} duration={2000} onClose={handleClose}/>}
     </div>
 }

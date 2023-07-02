@@ -10,9 +10,6 @@ import ArticleBox from "../../sections/article-box";
 import BottomNav from "../../sections/bottom-nav";
 
 const HomePage = () => {
-
-
-
     const handleOnclick = () => {
         console.log('1')
         store.updata('bilibili', store.bilibili + 1)

@@ -1,7 +1,7 @@
 .video-container {
     /* width: 100vw; */
     margin-top: -80px;
-    z-index: -9;
+    z-index: 1;
     position: relative;
     overflow: hidden;
     max-height: 100vh;
@@ -40,20 +40,50 @@
 }
 
 .letf-text {
-    /* width: 300px; */
-    /* height: 400px; */
     font-size: 72px;
 }
 
 .right-text {
-    /* width: 500px; */
-    /* height: 500px; */
     font-size: 32px;
     line-height: 60px;
-    /* padding-right: 80px; */
     margin-top: -40px;
 }
 video {
     width: 100%;
     height: auto;
+}
+
+
+@keyframes scaleDraw {
+    /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0% {
+        transform: scale(1);/*开始为原始大小*/
+    }
+    50% {
+        transform: scale(1.6);/*放大1.1倍*/
+    }
+}
+.concart-us-1 {
+    cursor: pointer;
+}
+.concart-us {
+    cursor: pointer;
+    position: absolute;
+    z-index: 9999;
+    margin-left: 40px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-align: center;
+    display: inline-block;
+    color: #D5575f;
+    -webkit-animation-name: scaleDraw;/*关键帧名称*/
+    -webkit-animation-timing-function: ease-in-out;/*动画的速度曲线*/
+    -webkit-animation-iteration-count: infinite;/*动画播放的次数*/
+    -webkit-animation-duration:1s;/*动画所花费的时间*/
 }

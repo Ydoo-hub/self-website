@@ -38,23 +38,23 @@ const VideoBox = () => {
     
 
     return <div className="video-container">
-        {/* <video width="320" height="240" src='https://assets.icoderoad.com/course/video-background/video.mp4'/> */}
-        <div className="text-box">
+        <div className="video-mask"></div>
+        <video className="video-box" height={videoHeight} src={VIDEO_URL} autoPlay muted loop/>
+        <div className="text-box" onClick={() => console.log(123)}>
             <div className="letf-text">
                 <div className="font-size-60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;考证就找</div>
                 <div style={{color: '#D5575f'}}>「 <span style={{color: '#fff', fontWeight: 800}}>办得了</span> 」</div>
-
             </div>
             <div className="right-text">
                 <div><span style={{color: '#fff'}}>•</span> <span style={{color: '#D5575f'}}>心理咨询师</span></div>
                 <div><span style={{color: '#D5575f'}}>•</span> 中医康复理疗师</div>
                 <div><span style={{color: '#fff'}}>•</span> <span style={{color: '#D5575f'}}>中医预防保健调理技术</span></div>
                 <div><span style={{color: '#D5575f'}}>•</span> 慢病管理与服务技能提升</div>
+                <div className="concart-us" onClick={() => {
+                    window.open('https://tb.53kf.com/code/client/1c8a6d5642a7ed7c1fe44234ad8cbc2b7/1')
+                }}>立即联系我们</div>
             </div>
         </div>
-        
-        <div className="video-mask"></div>
-        <video className="video-box" height={videoHeight} src={VIDEO_URL} autoPlay muted loop/>
     </div>
 }
 
