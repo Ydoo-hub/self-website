@@ -61,7 +61,7 @@ const CertificateBox = () => {
             <div className="first-type img-box-child" style={{borderRadius: '0 0 30px 0', overflow: "hidden"}}>
                 <img src={PIC_5} width='100%' height='100%' />
                 <div className="img-box-child-overlay">
-                    <p style={{fontSize: 24, color: '#D5575f'}}>中医预付保健</p>
+                    <p style={{fontSize: 24, color: '#D5575f'}}>中医预防保健</p>
                     <p>立即联系我们</p>
                 </div>
             </div>
